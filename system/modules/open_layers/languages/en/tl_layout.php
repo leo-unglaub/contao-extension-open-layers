@@ -41,4 +41,6 @@ $GLOBALS['TL_LANG']['tl_layout']['2_7']				= 'version 2.7';
 $GLOBALS['TL_LANG']['tl_layout']['2_8']				= 'version 2.8';
 $GLOBALS['TL_LANG']['tl_layout']['2_9']				= 'version 2.9';
 $GLOBALS['TL_LANG']['tl_layout']['2_10']			= 'version 2.10';
+$GLOBALS['TL_LANG']['tl_layout']['2_11']			= 'version 2.11';
+
 ?>
