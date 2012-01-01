@@ -44,6 +44,7 @@ class OpenLayers extends Controller
 	 * @param Database_Result $objPage
 	 * @param Database_Result $objLayout
 	 * @param PageRegular $objPageRegular
+	 * @return void
 	 */
 	public function addToHeader(Database_Result $objPage, Database_Result $objLayout, PageRegular $objPageRegular)
 	{
@@ -54,7 +55,8 @@ class OpenLayers extends Controller
 			'2_7'			=> 'plugins/OpenLayers/OpenLayers-2_7.js',
 			'2_8'			=> 'plugins/OpenLayers/OpenLayers-2_8.js',
 			'2_9'			=> 'plugins/OpenLayers/OpenLayers-2_9.js',
-			'2_10'			=> 'plugins/OpenLayers/OpenLayers-2_10.js'
+			'2_10'			=> 'plugins/OpenLayers/OpenLayers-2_10.js',
+			'2_11'			=> 'plugins/OpenLayers/OpenLayers-2_11.js'
 		);
 		
 		if ($objLayout->openlayers != '' && array_key_exists($objLayout->openlayers, $arrMapping))

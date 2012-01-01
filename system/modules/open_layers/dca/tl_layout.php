@@ -34,6 +34,7 @@
  */
 $GLOBALS['TL_DCA']['tl_layout']['palettes']['default'] = str_replace('mootools', 'mootools,openlayers', $GLOBALS['TL_DCA']['tl_layout']['palettes']['default']);
 
+
 /**
  * Fields
  */
@@ -42,7 +43,7 @@ $GLOBALS['TL_DCA']['tl_layout']['fields']['openlayers'] = array
 	'label'		=> &$GLOBALS['TL_LANG']['tl_layout']['openlayers'],
 	'exclude'	=> true,
 	'inputType'	=> 'select',
-	'options'	=> array('remote_stable', '2_10', '2_9', '2_8', '2_7'),
+	'options'	=> array('remote_stable', '2_11', '2_10', '2_9', '2_8', '2_7'),
 	'reference'	=> $GLOBALS['TL_LANG']['tl_layout'],
 	'eval'		=> array('tl_class'=>'m12', 'includeBlankOption'=>true)
 );
