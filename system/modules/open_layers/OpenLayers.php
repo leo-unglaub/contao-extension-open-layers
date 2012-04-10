@@ -48,7 +48,8 @@ class OpenLayers extends Controller
 	 */
 	public function addToHeader(Database_Result $objPage, Database_Result $objLayout, PageRegular $objPageRegular)
 	{
-		// map the requested version to a path to prevent loading somethink else
+		// map the requested version to a path to prevent loading somethink else by injecting the
+		// open layers field in the database
 		$arrMapping = array
 		(
 			'remote_stable' => 'http://openlayers.org/api/OpenLayers.js',
@@ -58,7 +59,8 @@ class OpenLayers extends Controller
 			'2_10'			=> 'plugins/OpenLayers/OpenLayers-2_10.js',
 			'2_11'			=> 'plugins/OpenLayers/OpenLayers-2_11.js'
 		);
-		
+
+		// check if a open layers version is requested and if the version is available
 		if ($objLayout->openlayers != '' && array_key_exists($objLayout->openlayers, $arrMapping))
 		{
 			// load the remote version from openlayers.org
