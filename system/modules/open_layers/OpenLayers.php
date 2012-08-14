@@ -10,12 +10,12 @@
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation, either
  * version 3 of the License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * Lesser General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public
  * License along with this program. If not, please visit the Free
  * Software Foundation website at <http://www.gnu.org/licenses/>.
@@ -30,7 +30,7 @@
 
 /**
  * Class OpenLayers
- * 
+ *
  * @copyright  Leo Unglaub 2012
  * @author     Leo Unglaub <leo@leo-unglaub.net>
  * @package    OpenLayers
@@ -40,7 +40,7 @@ class OpenLayers extends Controller
 {
 	/**
 	 * Check if a OpenLayers version is selected and add them to the header
-	 * 
+	 *
 	 * @param Database_Result $objPage
 	 * @param Database_Result $objLayout
 	 * @param PageRegular $objPageRegular
@@ -57,7 +57,8 @@ class OpenLayers extends Controller
 			'2_8'			=> 'plugins/OpenLayers/OpenLayers-2_8.js',
 			'2_9'			=> 'plugins/OpenLayers/OpenLayers-2_9.js',
 			'2_10'			=> 'plugins/OpenLayers/OpenLayers-2_10.js',
-			'2_11'			=> 'plugins/OpenLayers/OpenLayers-2_11.js'
+			'2_11'			=> 'plugins/OpenLayers/OpenLayers-2_11.js',
+			'2_12'			=> 'plugins/OpenLayers/OpenLayers-2_12.js'
 		);
 
 		// check if a open layers version is requested and if the version is available
@@ -69,7 +70,7 @@ class OpenLayers extends Controller
 				$GLOBALS['TL_HEAD'][] = '<script type="text/javascript" src="' . $arrMapping['remote_stable'] . '"></script>';
 				return;
 			}
-			
+
 			// load the local stored version
 			$GLOBALS['TL_JAVASCRIPT'][] = $arrMapping[$objLayout->openlayers];
 		}
